@@ -2,7 +2,7 @@ process {
     Id = "deploymentprocess-Projects-3"
     OwnerId = "Projects-3"
     IsFrozen = false
-    Version = 6
+    Version = 7
     SpaceId = "Spaces-1"
     Steps {
         run_a_script {
@@ -55,7 +55,33 @@ process {
                         octopus.action.script.scriptbody {
                             Key = "Octopus.Action.Script.ScriptBody"
                             Value {
-                                Value = ";"
+                                Value = "Select the script language and enter the body of the script that will be executed.
+
+Select the script language and enter the body of the script that will be executed.
+
+Select the script language and enter the body of the script that will be executed.
+
+Select the script language and enter the body of the script that will be executed.
+
+Select the script language and enter the body of the script that will be executed.
+
+Select the script language and enter the body of the script that will be executed.
+
+Select the script language and enter the body of the script that will be executed.
+
+Select the script language and enter the body of the script that will be executed.
+
+Select the script language and enter the body of the script that will be executed.
+
+Select the script language and enter the body of the script that will be executed.
+
+Select the script language and enter the body of the script that will be executed.
+
+Select the script language and enter the body of the script that will be executed.
+
+Select the script language and enter the body of the script that will be executed.
+
+"
                                 IsSensitive = false
                                 HasValue = true
                             }
