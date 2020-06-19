@@ -2,7 +2,7 @@ process {
     Id = "deploymentprocess-Projects-3"
     OwnerId = "Projects-3"
     IsFrozen = false
-    Version = 7
+    Version = 8
     SpaceId = "Spaces-1"
     Steps {
         run_a_script {
@@ -81,7 +81,7 @@ Select the script language and enter the body of the script that will be execute
 
 Select the script language and enter the body of the script that will be executed.
 
-"
+$var"
                                 IsSensitive = false
                                 HasValue = true
                             }
