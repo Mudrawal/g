@@ -2,7 +2,7 @@ process {
     Id = "deploymentprocess-Projects-3"
     OwnerId = "Projects-3"
     IsFrozen = false
-    Version = 3
+    Version = 4
     SpaceId = "Spaces-1"
     Steps {
         run_a_script {
@@ -20,7 +20,7 @@ process {
                     }
                     IsDisabled = false
                     IsRequired = false
-                    Environments = []
+                    Environments = ["Environments-1"]
                     ExcludedEnvironments = []
                     Channels = []
                     TenantTags = []
@@ -31,7 +31,7 @@ process {
                         octopus.action.runonserver {
                             Key = "Octopus.Action.RunOnServer"
                             Value {
-                                Value = "true"
+                                Value = "false"
                                 IsSensitive = false
                                 HasValue = true
                             }
@@ -64,8 +64,16 @@ process {
                 }
             }
             Properties {
+                octopus.action.targetroles {
+                    Key = "Octopus.Action.TargetRoles"
+                    Value {
+                        Value = "dev"
+                        IsSensitive = false
+                        HasValue = true
+                    }
+                }
             }
         }
     }
-    RelatedDocumentIds = []
+    RelatedDocumentIds = ["Environments-1"]
 }
